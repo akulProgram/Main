@@ -543,20 +543,62 @@ em { font-family: var(--font-display); font-style: italic; color: var(--color-or
 
 
 /* ========================================
-   SYSTEM DIAGRAM
+   SYSTEM DIAGRAM — product image
    ======================================== */
 .diagram-section { background: var(--color-surface); }
 
 .diagram-wrap {
-  max-width: 800px; margin: 0 auto;
-  background: var(--color-surface-alt);
+  max-width: 700px; margin: 0 auto;
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: 2rem;
   overflow-x: auto;
+  text-align: center;
+}
+
+.product-diagram-img {
+  width: 100%; max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+}
+
+[data-theme="dark"] .product-diagram-img {
+  filter: invert(0.88) hue-rotate(180deg) brightness(1.1);
 }
 
 .system-diagram { width: 100%; min-width: 600px; }
+
+/* Dimension callouts */
+.dimension-callouts {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 1rem; margin-top: 2rem;
+}
+
+.dim-card {
+  text-align: center;
+  padding: 1.2rem 0.8rem;
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.dim-value {
+  display: block;
+  font-family: var(--font-display); font-size: 1.6rem; font-weight: 700;
+  color: var(--color-orange); line-height: 1; margin-bottom: 0.4rem;
+}
+
+.dim-label {
+  font-size: 0.75rem; color: var(--color-muted); line-height: 1.4;
+}
+
+/* Grow model section */
+.grow-model {
+  margin-top: 4rem;
+  padding-top: 4rem;
+  border-top: 1px solid var(--color-border);
+}
 
 
 /* ========================================
@@ -923,7 +965,7 @@ em { font-family: var(--font-display); font-style: italic; color: var(--color-or
    ======================================== */
 @media (max-width: 900px) {
   .benefits-grid { grid-template-columns: repeat(2, 1fr); }
-  .approach-grid { grid-template-columns: repeat(2, 1fr); }
+  .approach-grid { grid-template-columns: repeat(2, 1fr) !important; }
   .specs-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .footer-top { flex-direction: column; }
@@ -933,6 +975,7 @@ em { font-family: var(--font-display); font-style: italic; color: var(--color-or
   .shipping-content { order: 1; }
   .compare-table { font-size: 0.82rem; }
   .compare-table th, .compare-table td { padding: 0.75rem 0.9rem; }
+  .dimension-callouts { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
