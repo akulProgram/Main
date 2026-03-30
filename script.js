@@ -1,4 +1,48 @@
+/* ── Theme: apply saved preference BEFORE paint ── */
+(function() {
+  const saved = localStorage.getItem('ias-theme');
+  if (saved === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
+
+  /* ── Theme Toggle ── */
+  const themeBtn = document.getElementById('themeToggle');
+
+  function isDark() {
+    return document.documentElement.getAttribute('data-theme') === 'dark';
+  }
+
+  function updateHeaderScroll() {
+    const header = document.querySelector('.site-header');
+    if (!header) return;
+
+    const scrolled = window.scrollY > 50;
+    if (isDark()) {
+      header.style.background = scrolled
+        ? 'rgba(10, 13, 8, 0.95)'
+        : 'rgba(10, 13, 8, 0.85)';
+    } else {
+      header.style.background = scrolled
+        ? 'rgba(250, 250, 247, 0.96)'
+        : 'rgba(250, 250, 247, 0.88)';
+    }
+  }
+
+  if (themeBtn) {
+    themeBtn.addEventListener('click', () => {
+      if (isDark()) {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('ias-theme', 'light');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('ias-theme', 'dark');
+      }
+      updateHeaderScroll();
+    });
+  }
 
   /* ── Mobile Menu ── */
   const toggle = document.getElementById('menuToggle');
@@ -35,13 +79,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const item = btn.closest('.faq-item');
       const isOpen = item.classList.contains('open');
 
-      // Close all
       document.querySelectorAll('.faq-item.open').forEach(openItem => {
         openItem.classList.remove('open');
         openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
       });
 
-      // Toggle clicked
       if (!isOpen) {
         item.classList.add('open');
         btn.setAttribute('aria-expanded', 'true');
@@ -68,7 +110,6 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(el);
   });
 
-  // Stagger children in groups
   const containers = '.benefits-grid, .approach-grid, .stats-inner, .contact-info, .audience-features, .specs-grid, .faq-list';
   document.querySelectorAll(containers).forEach(container => {
     const children = container.querySelectorAll(animTargets);
@@ -78,13 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ── Header scroll effect ── */
-  const header = document.querySelector('.site-header');
-  if (header) {
-    window.addEventListener('scroll', () => {
-      header.style.background = window.scrollY > 50
-        ? 'rgba(250, 250, 247, 0.96)'
-        : 'rgba(250, 250, 247, 0.88)';
-    }, { passive: true });
-  }
+  window.addEventListener('scroll', updateHeaderScroll, { passive: true });
+  updateHeaderScroll();
 
 });
