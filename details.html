@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Product Details — Berin Mini-Pivot</title>
+  <title>Product Details — MvuraFlow</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,9 +46,9 @@
 
     <!-- PAGE HERO -->
     <section class="page-hero">
-      <span class="hero-eyebrow">Berin Mini-Pivot</span>
+      <span class="hero-eyebrow">MvuraFlow</span>
       <h1 class="hero-title">How It <em>Works</em></h1>
-      <p class="hero-subtitle">A deep dive into the design, setup process, and specifications of the Berin Mini-Pivot irrigation system.</p>
+      <p class="hero-subtitle">A deep dive into the design, setup process, and specifications of the MvuraFlow irrigation system.</p>
     </section>
 
     <!-- ═══ HOW IT WORKS ═══ -->
@@ -61,23 +61,23 @@
         <div class="approach-grid">
           <div class="approach-step">
             <div class="step-number">01</div>
-            <h3>Anchor the Center</h3>
-            <p>Fix the center pivot post into the ground at the middle of your plot. The anchor base holds the system in place and connects to your water source.</p>
+            <h3>Unpack the Crate</h3>
+            <p>Open the flat-pack crate and lay out the pipe sections, wheel towers, sprinkler heads, and connectors at the edge of your field.</p>
           </div>
           <div class="approach-step">
             <div class="step-number">02</div>
-            <h3>Assemble the Arm</h3>
-            <p>Connect the lightweight pipe sections and sprinkler heads along the pivot arm. Sections click together — no welding, no bolts, no tools needed.</p>
+            <h3>Assemble the Span</h3>
+            <p>Connect the lightweight pipe sections end-to-end to form the lateral span. Sections snap-fit together — no welding, no bolts, no special tools.</p>
           </div>
           <div class="approach-step">
             <div class="step-number">03</div>
             <h3>Connect Water</h3>
-            <p>Attach a standard hose from your water source — borehole pump, river, tank, or gravity-fed system — to the center inlet.</p>
+            <p>Attach a standard hose from your water source — borehole pump, river, tank, or gravity-fed system — to the inlet end of the lateral pipe.</p>
           </div>
           <div class="approach-step">
             <div class="step-number">04</div>
-            <h3>Move & Irrigate</h3>
-            <p>Walk the wheeled end around the center point. The sprinkler heads distribute water evenly across the circular coverage area as you go.</p>
+            <h3>Walk & Irrigate</h3>
+            <p>Push the wheeled system forward across your field in straight passes. Sprinklers distribute water evenly across the full span width as you move.</p>
           </div>
         </div>
       </div>
@@ -88,85 +88,88 @@
       <div class="section-inner">
         <div class="section-header">
           <span class="section-tag">System Overview</span>
-          <h2>Anatomy of the <em>Mini-Pivot</em></h2>
+          <h2>Anatomy of the <em>MvuraFlow</em></h2>
         </div>
         <div class="diagram-wrap">
-          <svg viewBox="0 0 800 340" fill="none" class="system-diagram">
+          <svg viewBox="0 0 800 300" fill="none" class="system-diagram">
             <!-- Ground -->
-            <rect x="0" y="260" width="800" height="80" fill="var(--color-earth)" opacity="0.06" rx="0"/>
-            <path d="M0 260 Q200 250, 400 258 T800 254" stroke="var(--color-earth)" stroke-width="1.5" fill="none" opacity="0.3"/>
+            <rect x="0" y="220" width="800" height="80" fill="var(--color-earth)" opacity="0.05" rx="0"/>
+            <path d="M0 220 L800 220" stroke="var(--color-earth)" stroke-width="1.5" opacity="0.25"/>
+            <!-- Crop rows -->
+            <g opacity="0.06"><line x1="60" y1="222" x2="60" y2="280" stroke="var(--color-accent)" stroke-width="1"/><line x1="120" y1="222" x2="120" y2="280" stroke="var(--color-accent)" stroke-width="1"/><line x1="180" y1="222" x2="180" y2="280" stroke="var(--color-accent)" stroke-width="1"/><line x1="240" y1="222" x2="240" y2="280" stroke="var(--color-accent)" stroke-width="1"/><line x1="300" y1="222" x2="300" y2="280" stroke="var(--color-accent)" stroke-width="1"/><line x1="360" y1="222" x2="360" y2="280" stroke="var(--color-accent)" stroke-width="1"/><line x1="420" y1="222" x2="420" y2="280" stroke="var(--color-accent)" stroke-width="1"/><line x1="480" y1="222" x2="480" y2="280" stroke="var(--color-accent)" stroke-width="1"/><line x1="540" y1="222" x2="540" y2="280" stroke="var(--color-accent)" stroke-width="1"/></g>
 
-            <!-- Coverage circle (dotted) -->
-            <ellipse cx="240" cy="250" rx="200" ry="25" stroke="var(--color-accent)" stroke-width="1" fill="none" opacity="0.15" stroke-dasharray="6 4"/>
+            <!-- Lateral pipe -->
+            <line x1="80" y1="140" x2="560" y2="140" stroke="var(--color-text)" stroke-width="4" stroke-linecap="round" opacity="0.4"/>
 
-            <!-- Coverage fill -->
-            <ellipse cx="240" cy="250" rx="200" ry="25" fill="var(--color-accent)" opacity="0.04"/>
+            <!-- Wheel towers -->
+            <g>
+              <line x1="120" y1="140" x2="108" y2="210" stroke="var(--color-muted)" stroke-width="2" opacity="0.35"/>
+              <line x1="120" y1="140" x2="132" y2="210" stroke="var(--color-muted)" stroke-width="2" opacity="0.35"/>
+              <circle cx="108" cy="212" r="10" stroke="var(--color-muted)" stroke-width="1.5" fill="none" opacity="0.3"/>
+              <circle cx="132" cy="212" r="10" stroke="var(--color-muted)" stroke-width="1.5" fill="none" opacity="0.3"/>
 
-            <!-- Center post -->
-            <rect x="234" y="160" width="12" height="95" rx="3" fill="var(--color-muted)" opacity="0.5"/>
-            <circle cx="240" cy="155" r="10" fill="var(--color-accent)" opacity="0.8"/>
-            <circle cx="240" cy="155" r="4" fill="var(--color-bg)"/>
+              <line x1="260" y1="140" x2="248" y2="210" stroke="var(--color-muted)" stroke-width="2" opacity="0.35"/>
+              <line x1="260" y1="140" x2="272" y2="210" stroke="var(--color-muted)" stroke-width="2" opacity="0.35"/>
+              <circle cx="248" cy="212" r="10" stroke="var(--color-muted)" stroke-width="1.5" fill="none" opacity="0.3"/>
+              <circle cx="272" cy="212" r="10" stroke="var(--color-muted)" stroke-width="1.5" fill="none" opacity="0.3"/>
 
-            <!-- Pivot arm -->
-            <line x1="240" y1="155" x2="500" y2="135" stroke="var(--color-text)" stroke-width="3.5" stroke-linecap="round" opacity="0.45"/>
+              <line x1="400" y1="140" x2="388" y2="210" stroke="var(--color-muted)" stroke-width="2" opacity="0.35"/>
+              <line x1="400" y1="140" x2="412" y2="210" stroke="var(--color-muted)" stroke-width="2" opacity="0.35"/>
+              <circle cx="388" cy="212" r="10" stroke="var(--color-muted)" stroke-width="1.5" fill="none" opacity="0.3"/>
+              <circle cx="412" cy="212" r="10" stroke="var(--color-muted)" stroke-width="1.5" fill="none" opacity="0.3"/>
 
-            <!-- Support legs -->
-            <line x1="320" y1="148" x2="320" y2="248" stroke="var(--color-muted)" stroke-width="1.5" opacity="0.2"/>
-            <line x1="410" y1="142" x2="410" y2="244" stroke="var(--color-muted)" stroke-width="1.5" opacity="0.2"/>
+              <line x1="520" y1="140" x2="508" y2="210" stroke="var(--color-muted)" stroke-width="2" opacity="0.35"/>
+              <line x1="520" y1="140" x2="532" y2="210" stroke="var(--color-muted)" stroke-width="2" opacity="0.35"/>
+              <circle cx="508" cy="212" r="10" stroke="var(--color-muted)" stroke-width="1.5" fill="none" opacity="0.3"/>
+              <circle cx="532" cy="212" r="10" stroke="var(--color-muted)" stroke-width="1.5" fill="none" opacity="0.3"/>
+            </g>
 
-            <!-- Wheel -->
-            <circle cx="500" cy="235" r="20" stroke="var(--color-muted)" stroke-width="2" fill="none" opacity="0.35"/>
-            <circle cx="500" cy="235" r="3" fill="var(--color-muted)" opacity="0.4"/>
-            <line x1="500" y1="135" x2="500" y2="215" stroke="var(--color-muted)" stroke-width="2" opacity="0.3"/>
-            <!-- Spokes -->
-            <line x1="500" y1="219" x2="500" y2="251" stroke="var(--color-muted)" stroke-width="1" opacity="0.2"/>
-            <line x1="484" y1="235" x2="516" y2="235" stroke="var(--color-muted)" stroke-width="1" opacity="0.2"/>
+            <!-- Water inlet box -->
+            <rect x="55" y="130" width="30" height="20" rx="4" fill="var(--color-water)" opacity="0.15" stroke="var(--color-water)" stroke-width="1.2" opacity="0.3"/>
 
             <!-- Sprinkler heads -->
-            <g opacity="0.6">
-              <line x1="290" y1="150" x2="290" y2="140" stroke="var(--color-water)" stroke-width="1.5"/>
-              <circle cx="290" cy="138" r="3" fill="var(--color-water)" opacity="0.5"/>
-              <line x1="370" y1="144" x2="370" y2="134" stroke="var(--color-water)" stroke-width="1.5"/>
-              <circle cx="370" cy="132" r="3" fill="var(--color-water)" opacity="0.5"/>
-              <line x1="450" y1="138" x2="450" y2="128" stroke="var(--color-water)" stroke-width="1.5"/>
-              <circle cx="450" cy="126" r="3" fill="var(--color-water)" opacity="0.5"/>
+            <g opacity="0.55">
+              <line x1="180" y1="140" x2="180" y2="128" stroke="var(--color-water)" stroke-width="2"/><circle cx="180" cy="125" r="4" fill="var(--color-water)" opacity="0.45"/>
+              <line x1="330" y1="140" x2="330" y2="128" stroke="var(--color-water)" stroke-width="2"/><circle cx="330" cy="125" r="4" fill="var(--color-water)" opacity="0.45"/>
+              <line x1="470" y1="140" x2="470" y2="128" stroke="var(--color-water)" stroke-width="2"/><circle cx="470" cy="125" r="4" fill="var(--color-water)" opacity="0.45"/>
             </g>
 
-            <!-- Water spray drops -->
+            <!-- Spray drops -->
             <g class="spray-group">
-              <circle cx="285" cy="155" r="1.2" fill="var(--color-water)" opacity="0.4" class="spray s1"/>
-              <circle cx="292" cy="160" r="1" fill="var(--color-water)" opacity="0.3" class="spray s2"/>
-              <circle cx="365" cy="150" r="1.2" fill="var(--color-water)" opacity="0.4" class="spray s3"/>
-              <circle cx="372" cy="155" r="1" fill="var(--color-water)" opacity="0.3" class="spray s4"/>
-              <circle cx="445" cy="143" r="1.2" fill="var(--color-water)" opacity="0.4" class="spray s5"/>
-              <circle cx="452" cy="148" r="1" fill="var(--color-water)" opacity="0.3" class="spray s6"/>
+              <circle cx="175" cy="155" r="1.5" fill="var(--color-water)" opacity="0.4" class="spray s1"/>
+              <circle cx="183" cy="160" r="1.2" fill="var(--color-water)" opacity="0.3" class="spray s2"/>
+              <circle cx="325" cy="155" r="1.5" fill="var(--color-water)" opacity="0.4" class="spray s3"/>
+              <circle cx="333" cy="160" r="1.2" fill="var(--color-water)" opacity="0.3" class="spray s4"/>
+              <circle cx="465" cy="155" r="1.5" fill="var(--color-water)" opacity="0.4" class="spray s5"/>
+              <circle cx="473" cy="160" r="1.2" fill="var(--color-water)" opacity="0.3" class="spray s6"/>
             </g>
 
-            <!-- Water source -->
-            <rect x="180" y="268" width="120" height="30" rx="6" fill="var(--color-water)" opacity="0.08" stroke="var(--color-water)" stroke-width="1" opacity="0.15"/>
-            <text x="240" y="288" text-anchor="middle" fill="var(--color-water)" font-size="10" font-family="var(--font-body)" letter-spacing="0.05em" opacity="0.6">WATER SOURCE</text>
+            <!-- Travel direction arrow -->
+            <line x1="570" y1="170" x2="610" y2="170" stroke="var(--color-muted)" stroke-width="1.5" opacity="0.35" stroke-dasharray="4 3"/>
+            <polygon points="610,166 620,170 610,174" fill="var(--color-muted)" opacity="0.35"/>
 
             <!-- Labels -->
-            <g font-size="10" font-family="var(--font-body)" letter-spacing="0.04em" fill="var(--color-muted)">
-              <!-- Center -->
-              <line x1="240" y1="130" x2="240" y2="100" stroke="var(--color-border)" stroke-width="1"/>
-              <text x="240" y="94" text-anchor="middle" fill="var(--color-accent-light)" font-weight="500">CENTER POST</text>
+            <g font-size="11" font-family="var(--font-body)" letter-spacing="0.04em" fill="var(--color-muted)">
+              <line x1="70" y1="115" x2="70" y2="90" stroke="var(--color-border)" stroke-width="1"/>
+              <text x="70" y="84" text-anchor="middle" fill="var(--color-water)" font-weight="500">WATER INLET</text>
 
-              <!-- Sprinklers -->
-              <line x1="370" y1="120" x2="370" y2="96" stroke="var(--color-border)" stroke-width="1"/>
-              <text x="370" y="90" text-anchor="middle" fill="var(--color-water)" font-weight="500">SPRINKLER HEADS</text>
+              <line x1="330" y1="110" x2="330" y2="80" stroke="var(--color-border)" stroke-width="1"/>
+              <text x="330" y="74" text-anchor="middle" fill="var(--color-water)" font-weight="500">SPRINKLERS</text>
 
-              <!-- Wheel -->
-              <line x1="540" y1="235" x2="570" y2="235" stroke="var(--color-border)" stroke-width="1"/>
-              <text x="575" y="238" fill="var(--color-accent-light)" font-weight="500">WHEEL</text>
+              <line x1="260" y1="230" x2="260" y2="252" stroke="var(--color-border)" stroke-width="1"/>
+              <text x="260" y="265" text-anchor="middle" fill="var(--color-accent-light)" font-weight="500">WHEEL TOWERS</text>
 
-              <!-- Arm -->
-              <text x="640" y="140" fill="var(--color-text)" opacity="0.5" font-weight="500">PIVOT ARM</text>
-              <line x1="510" y1="137" x2="635" y2="137" stroke="var(--color-border)" stroke-width="1"/>
+              <text x="640" y="173" fill="var(--color-text)" opacity="0.45" font-weight="500">DIRECTION</text>
+              <text x="640" y="186" fill="var(--color-text)" opacity="0.35" font-size="9">OF TRAVEL</text>
 
-              <!-- Coverage -->
-              <text x="100" y="255" fill="var(--color-accent)" opacity="0.4" font-size="9">COVERAGE AREA</text>
+              <text x="320" y="295" text-anchor="middle" fill="var(--color-accent)" opacity="0.35" font-size="10">RECTANGULAR COVERAGE AREA</text>
             </g>
+
+            <!-- Span bracket -->
+            <line x1="80" y1="50" x2="560" y2="50" stroke="var(--color-accent)" stroke-width="1" opacity="0.15" stroke-dasharray="5 4"/>
+            <line x1="80" y1="46" x2="80" y2="54" stroke="var(--color-accent)" stroke-width="1" opacity="0.15"/>
+            <line x1="560" y1="46" x2="560" y2="54" stroke="var(--color-accent)" stroke-width="1" opacity="0.15"/>
+            <text x="320" y="44" text-anchor="middle" fill="var(--color-accent)" font-size="10" font-family="var(--font-body)" letter-spacing="0.08em" opacity="0.25">LATERAL SPAN</text>
           </svg>
         </div>
       </div>
@@ -182,11 +185,11 @@
         <div class="specs-grid">
           <div class="spec-item">
             <span class="spec-label">Coverage Area</span>
-            <span class="spec-value">Up to 5 hectares (circular)</span>
+            <span class="spec-value">Up to 5 hectares (rectangular)</span>
           </div>
           <div class="spec-item">
-            <span class="spec-label">Pivot Arm Length</span>
-            <span class="spec-value">Configurable: 50m – 125m radius</span>
+            <span class="spec-label">Lateral Span</span>
+            <span class="spec-value">Configurable: 50m – 125m width</span>
           </div>
           <div class="spec-item">
             <span class="spec-label">Power Source</span>
@@ -247,7 +250,7 @@
               <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="faq-answer">
-              <p>Each Berin Mini-Pivot ships as flat-pack pieces inside a single compact crate. 20 units fit into one standard shipping container, which means we can deliver to any port or inland depot across Africa at standard freight rates — no oversized loads, no special trucks, no cranes. This is a major advantage over traditional pivot systems that require expensive heavy-haul logistics.</p>
+              <p>Each MvuraFlow ships as flat-pack pieces inside a single compact crate. 20 units fit into one standard shipping container, which means we can deliver to any port or inland depot across Africa at standard freight rates — no oversized loads, no special trucks, no cranes. This is a major advantage over traditional lateral-move irrigation systems that require expensive heavy-haul logistics.</p>
             </div>
           </div>
 
@@ -257,7 +260,7 @@
               <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="faq-answer">
-              <p>The Berin Mini-Pivot works with low-pressure water sources. A standard small pump or gravity-fed tank with at least 1–2 bar of pressure is sufficient. This makes it compatible with the most common water setups found on smallholder farms.</p>
+              <p>The MvuraFlow works with low-pressure water sources. A standard small pump or gravity-fed tank with at least 1–2 bar of pressure is sufficient. This makes it compatible with the most common water setups found on smallholder farms.</p>
             </div>
           </div>
 
@@ -267,7 +270,7 @@
               <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="faq-answer">
-              <p>Absolutely. The Mini-Pivot pairs well with solar-powered water pumps. Since the pivot itself is manually moved, the only powered component is your pump — and solar works perfectly for that.</p>
+              <p>Absolutely. The MvuraFlow pairs well with solar-powered water pumps. Since the system itself is manually moved, the only powered component is your pump — and solar works perfectly for that.</p>
             </div>
           </div>
 
@@ -277,7 +280,7 @@
               <svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="faq-answer">
-              <p>Built with galvanized steel and UV-resistant materials, the Berin Mini-Pivot is designed for years of use in harsh conditions. Individual components like nozzles can be replaced cheaply if needed.</p>
+              <p>Built with galvanized steel and UV-resistant materials, the MvuraFlow is designed for years of use in harsh conditions. Individual components like nozzles can be replaced cheaply if needed.</p>
             </div>
           </div>
 

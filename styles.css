@@ -652,7 +652,7 @@ em { font-family: var(--font-display); font-style: italic; color: var(--color-or
   border-bottom: 1px solid var(--color-border);
 }
 
-.compare-table th.compare-berin { color: var(--color-accent-light); }
+.compare-table th.compare-mvura { color: var(--color-accent-light); }
 .compare-table th.compare-traditional { color: var(--color-muted); }
 
 .compare-table td {
