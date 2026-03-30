@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Innovative Agri Solutions — Cultivating Tomorrow</title>
+  <title>Innovative Agri Solutions — Berin Mini-Pivot</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -15,20 +15,12 @@
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="logo">
-        <svg class="logo-icon" viewBox="0 0 40 40" width="36" height="36" fill="none">
-          <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.2" opacity="0.25"/>
-          <path d="M20 6 C20 6, 12 16, 12 22 C12 27, 16 30, 20 30 C24 30, 28 27, 28 22 C28 16, 20 6, 20 6Z" fill="var(--color-accent)" opacity="0.85"/>
-          <path d="M20 14 C20 14, 16 20, 16 23 C16 25.5, 18 27, 20 27 C22 27, 24 25.5, 24 23 C24 20, 20 14, 20 14Z" fill="var(--color-accent-light)" opacity="0.5"/>
-          <line x1="20" y1="20" x2="20" y2="35" stroke="var(--color-accent)" stroke-width="1.5" opacity="0.4"/>
-          <path d="M20 29 Q15 27, 13 29" stroke="var(--color-accent)" stroke-width="1" fill="none" opacity="0.35"/>
-          <path d="M20 29 Q25 27, 27 29" stroke="var(--color-accent)" stroke-width="1" fill="none" opacity="0.35"/>
-        </svg>
-        <span class="logo-text">Innovative Agri Solutions</span>
+        <img src="logo.png" alt="Innovative Agri Solutions" class="logo-img" />
       </a>
 
       <nav class="main-nav" id="mainNav">
         <a href="index.html" class="nav-link active">Home</a>
-        <a href="details.html" class="nav-link">Details</a>
+        <a href="details.html" class="nav-link">Product Details</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
@@ -38,114 +30,437 @@
     </div>
   </header>
 
-  <!-- HERO -->
   <main class="page-content">
+
+    <!-- ═══ HERO ═══ -->
     <section class="hero">
       <div class="hero-bg">
         <div class="hero-grain"></div>
         <div class="hero-gradient"></div>
+        <!-- Stylized field rows -->
         <div class="hero-field-lines">
           <svg viewBox="0 0 1400 500" preserveAspectRatio="none">
-            <path d="M0 380 Q350 300, 700 340 T1400 320" stroke="rgba(107,142,35,0.15)" stroke-width="1.5" fill="none"/>
-            <path d="M0 410 Q350 340, 700 370 T1400 360" stroke="rgba(107,142,35,0.08)" stroke-width="1" fill="none"/>
-            <path d="M0 435 Q350 375, 700 395 T1400 390" stroke="rgba(107,142,35,0.05)" stroke-width="1" fill="none"/>
+            <path d="M0 370 Q200 340, 400 350 T800 335 T1400 345" stroke="rgba(139,119,74,0.12)" stroke-width="1" fill="none"/>
+            <path d="M0 395 Q200 365, 400 375 T800 360 T1400 370" stroke="rgba(139,119,74,0.08)" stroke-width="1" fill="none"/>
+            <path d="M0 415 Q200 390, 400 398 T800 385 T1400 393" stroke="rgba(139,119,74,0.05)" stroke-width="1" fill="none"/>
           </svg>
         </div>
       </div>
+
       <div class="hero-content">
-        <span class="hero-eyebrow">Agriculture &middot; Innovation &middot; Sustainability</span>
-        <h1 class="hero-title">Cultivating<br/><em>Tomorrow's</em> Harvest</h1>
-        <p class="hero-subtitle">We bring precision technology, sustainable practices, and deep agronomic expertise to every acre — helping farmers grow smarter, greener, and more profitably.</p>
+        <span class="hero-eyebrow">Introducing the Berin Mini-Pivot</span>
+        <h1 class="hero-title">Affordable Irrigation<br/>for <em>Every Farm</em></h1>
+        <p class="hero-subtitle">A manually-moved pivot system designed for smallholder farmers across Africa. Simple to use, easy to transport, built to transform your harvest.</p>
         <div class="hero-actions">
-          <a href="details.html" class="btn btn-primary">Explore Our Solutions</a>
-          <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+          <a href="details.html" class="btn btn-primary">See How It Works</a>
+          <a href="contact.html" class="btn btn-outline">Request a Quote</a>
         </div>
       </div>
+
+      <!-- Pivot illustration -->
+      <div class="hero-pivot-visual">
+        <svg viewBox="0 0 500 220" fill="none" class="pivot-illustration">
+          <!-- Ground -->
+          <path d="M0 190 Q125 175, 250 180 T500 175" stroke="var(--color-earth)" stroke-width="1.5" fill="none" opacity="0.4"/>
+          <path d="M0 200 Q125 188, 250 192 T500 188" stroke="var(--color-earth)" stroke-width="1" fill="none" opacity="0.25"/>
+
+          <!-- Irrigated area glow -->
+          <ellipse cx="180" cy="178" rx="140" ry="20" fill="var(--color-accent)" opacity="0.06"/>
+
+          <!-- Pivot center post -->
+          <rect x="176" y="120" width="8" height="60" rx="2" fill="var(--color-muted)" opacity="0.6"/>
+          <circle cx="180" cy="118" r="6" fill="var(--color-accent)" opacity="0.8"/>
+          <circle cx="180" cy="118" r="2.5" fill="var(--color-bg)"/>
+
+          <!-- Pivot arm -->
+          <line x1="180" y1="118" x2="360" y2="105" stroke="var(--color-text)" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+
+          <!-- Wheel at end -->
+          <circle cx="360" cy="168" r="12" stroke="var(--color-muted)" stroke-width="1.5" fill="none" opacity="0.4"/>
+          <circle cx="360" cy="168" r="2" fill="var(--color-muted)" opacity="0.5"/>
+          <line x1="360" y1="105" x2="360" y2="156" stroke="var(--color-muted)" stroke-width="1.5" opacity="0.4"/>
+
+          <!-- Support struts -->
+          <line x1="240" y1="113" x2="240" y2="176" stroke="var(--color-muted)" stroke-width="1" opacity="0.25"/>
+          <line x1="300" y1="109" x2="300" y2="173" stroke="var(--color-muted)" stroke-width="1" opacity="0.25"/>
+
+          <!-- Water spray -->
+          <g class="spray-group">
+            <circle cx="220" cy="125" r="1.5" fill="var(--color-water)" opacity="0.7" class="spray s1"/>
+            <circle cx="222" cy="140" r="1" fill="var(--color-water)" opacity="0.5" class="spray s2"/>
+            <circle cx="260" cy="120" r="1.5" fill="var(--color-water)" opacity="0.65" class="spray s3"/>
+            <circle cx="258" cy="136" r="1" fill="var(--color-water)" opacity="0.45" class="spray s4"/>
+            <circle cx="300" cy="116" r="1.5" fill="var(--color-water)" opacity="0.6" class="spray s5"/>
+            <circle cx="298" cy="132" r="1" fill="var(--color-water)" opacity="0.4" class="spray s6"/>
+            <circle cx="340" cy="112" r="1.5" fill="var(--color-water)" opacity="0.55" class="spray s7"/>
+            <circle cx="338" cy="128" r="1" fill="var(--color-water)" opacity="0.35" class="spray s8"/>
+          </g>
+
+          <!-- Arc showing pivot coverage -->
+          <path d="M40 178 A140 140 0 0 1 320 178" stroke="var(--color-accent)" stroke-width="0.8" fill="none" opacity="0.15" stroke-dasharray="4 4"/>
+
+          <!-- Labels -->
+          <text x="180" y="210" text-anchor="middle" fill="var(--color-muted)" font-size="9" font-family="var(--font-body)" letter-spacing="0.05em">CENTER PIVOT</text>
+          <text x="360" y="210" text-anchor="middle" fill="var(--color-muted)" font-size="9" font-family="var(--font-body)" letter-spacing="0.05em">WHEELED END</text>
+        </svg>
+      </div>
+
       <div class="hero-scroll-hint">
         <span>Scroll</span>
         <div class="scroll-line"></div>
       </div>
     </section>
 
-    <!-- STATS STRIP -->
+    <!-- ═══ PROBLEM / SOLUTION ═══ -->
+    <section class="section problem-section">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">The Challenge</span>
+          <h2>Millions of African farmers depend on rain.<br/><em>They don't have to.</em></h2>
+          <p>Traditional pivot systems cost tens of thousands of dollars, require electricity, need specialized installation — and ship as massive, bulky equipment that can't reach most rural areas. Smallholder farms have been locked out. Until now.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ KEY BENEFITS ═══ -->
+    <section class="section benefits-section">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">Why Berin Mini-Pivot</span>
+          <h2>Built for the <em>Real World</em></h2>
+        </div>
+        <div class="benefits-grid">
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 48 48" width="44" height="44" fill="none">
+                <circle cx="24" cy="24" r="20" stroke="var(--color-accent)" stroke-width="1" opacity="0.2"/>
+                <path d="M18 30 L18 22 L22 22 L22 30" stroke="var(--color-water)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M26 30 L26 18 L30 18 L30 30" stroke="var(--color-water)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="14" y1="30" x2="34" y2="30" stroke="var(--color-muted)" stroke-width="1" opacity="0.4"/>
+              </svg>
+            </div>
+            <h3>Affordable</h3>
+            <p>A fraction of the cost of commercial pivots. Designed so smallholder farmers can access pivot irrigation without large capital investment.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 48 48" width="44" height="44" fill="none">
+                <circle cx="24" cy="24" r="20" stroke="var(--color-accent)" stroke-width="1" opacity="0.2"/>
+                <path d="M16 24 C16 24, 20 16, 24 16 C28 16, 32 24, 32 24 C32 24, 28 32, 24 32 C20 32, 16 24, 16 24Z" stroke="var(--color-water)" stroke-width="1.5" fill="var(--color-water)" fill-opacity="0.1"/>
+                <circle cx="24" cy="24" r="3" fill="var(--color-water)" opacity="0.6"/>
+              </svg>
+            </div>
+            <h3>No Electricity Needed</h3>
+            <p>Manually moved by hand — no motors, no fuel, no power grid required. Works anywhere, even the most remote locations.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 48 48" width="44" height="44" fill="none">
+                <circle cx="24" cy="24" r="20" stroke="var(--color-accent)" stroke-width="1" opacity="0.2"/>
+                <path d="M24 14 L24 34" stroke="var(--color-water)" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M24 14 L20 20" stroke="var(--color-water)" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M24 14 L28 20" stroke="var(--color-water)" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M18 28 Q24 24, 30 28" stroke="var(--color-earth)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <path d="M16 32 Q24 28, 32 32" stroke="var(--color-earth)" stroke-width="1" fill="none" opacity="0.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Easy to Set Up</h3>
+            <p>Simple assembly, no specialized tools or technicians. One person can install and begin irrigating within hours — not weeks.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 48 48" width="44" height="44" fill="none">
+                <circle cx="24" cy="24" r="20" stroke="var(--color-accent)" stroke-width="1" opacity="0.2"/>
+                <circle cx="24" cy="24" r="10" stroke="var(--color-water)" stroke-width="1" opacity="0.25" stroke-dasharray="3 3"/>
+                <path d="M24 14 A10 10 0 0 1 34 24" stroke="var(--color-water)" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="24" cy="24" r="2" fill="var(--color-accent)" opacity="0.7"/>
+                <line x1="24" y1="24" x2="34" y2="20" stroke="var(--color-accent)" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+              </svg>
+            </div>
+            <h3>Even Water Coverage</h3>
+            <p>Pivot design delivers uniform irrigation in a circular pattern, reducing water waste and ensuring every plant gets what it needs.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 48 48" width="44" height="44" fill="none">
+                <circle cx="24" cy="24" r="20" stroke="var(--color-accent)" stroke-width="1" opacity="0.2"/>
+                <rect x="14" y="18" width="20" height="16" rx="2" stroke="var(--color-water)" stroke-width="1.5" fill="none"/>
+                <line x1="14" y1="24" x2="34" y2="24" stroke="var(--color-water)" stroke-width="1" opacity="0.4"/>
+                <path d="M18 18 L18 14 L30 14 L30 18" stroke="var(--color-water)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="22" y1="22" x2="26" y2="22" stroke="var(--color-water)" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Ships in a Crate</h3>
+            <p>Each unit packs flat into a single compact crate. 20 units fit in one standard container — no oversized freight, no special trucks, no cranes needed.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 48 48" width="44" height="44" fill="none">
+                <circle cx="24" cy="24" r="20" stroke="var(--color-accent)" stroke-width="1" opacity="0.2"/>
+                <path d="M24 12 C24 12, 17 20, 17 25 C17 29, 20 32, 24 32 C28 32, 31 29, 31 25 C31 20, 24 12, 24 12Z" fill="var(--color-water)" opacity="0.15" stroke="var(--color-water)" stroke-width="1.5"/>
+                <path d="M21 26 L23 28 L27 22" stroke="var(--color-water)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Water Efficient</h3>
+            <p>Uses significantly less water than flood or furrow irrigation. Helps conserve scarce water resources in drought-prone regions.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SHIPPING & PACKAGING — KEY DIFFERENTIATOR ═══ -->
+    <section class="section shipping-section">
+      <div class="section-inner">
+        <div class="shipping-layout">
+
+          <!-- Visual: Crate + Container -->
+          <div class="shipping-visual">
+            <svg viewBox="0 0 440 360" fill="none" class="crate-illustration">
+              <!-- Container outline -->
+              <rect x="20" y="30" width="400" height="160" rx="6" stroke="var(--color-water)" stroke-width="1.5" opacity="0.25" stroke-dasharray="6 4"/>
+              <text x="220" y="22" text-anchor="middle" fill="var(--color-water)" font-size="11" font-family="var(--font-body)" font-weight="500" letter-spacing="0.1em" opacity="0.5">STANDARD SHIPPING CONTAINER</text>
+
+              <!-- Crate grid: 4 columns × 5 rows = 20 units -->
+              <g>
+                <!-- Row 1 -->
+                <rect x="40"  y="50" width="80" height="24" rx="3" fill="var(--color-accent)" opacity="0.15" stroke="var(--color-accent)" stroke-width="0.8" opacity="0.3"/>
+                <rect x="130" y="50" width="80" height="24" rx="3" fill="var(--color-accent)" opacity="0.18" stroke="var(--color-accent)" stroke-width="0.8" opacity="0.3"/>
+                <rect x="220" y="50" width="80" height="24" rx="3" fill="var(--color-accent)" opacity="0.15" stroke="var(--color-accent)" stroke-width="0.8" opacity="0.3"/>
+                <rect x="310" y="50" width="80" height="24" rx="3" fill="var(--color-accent)" opacity="0.18" stroke="var(--color-accent)" stroke-width="0.8" opacity="0.3"/>
+                <!-- Row 2 -->
+                <rect x="40"  y="80" width="80" height="24" rx="3" fill="var(--color-accent)" opacity="0.2" stroke="var(--color-accent)" stroke-width="0.8" opacity="0.3"/>
+                <rect x="130" y="80" width="80" height="24" rx="3" fill="var(--color-accent)" opacity="0.15" stroke="var(--color-accent)" stroke-width="0.8" opacity="0.3"/>
+                <rect x="220" y="80" width="80" height="24" rx="3" fill="var(--color-accent)" opacity="0.2" stroke="var(--color-accent)" stroke-width="0.8" opacity="0.3"/>
+                <rect x="310" y="80" width="80" height="24" rx="3" fill="var(--color-accent)" opacity="0.15" stroke="var(--color-accent)" stroke-width="0.8" opacity="0.3"/>
+                <!-- Row 3 -->
+                <rect x="40"  y="110" width="80" height="24" rx="3" fill="var(--color-accent)" opacity="0.15" stroke="var(--color-accent)" stroke-width="0.8" opacity="0.3"/>
+                <rect x="130" y="110" width="80" height="24" rx="3" fill="var(--color-accent)" opacity="0.22" stroke="var(--color-accent)" stroke-width="0.8" opacity="0.3"/>
+                <rect x="220" y="110" width="80" height="24" rx="3" fill="var(--color-accent)" opacity="0.15" stroke="var(--color-accent)" stroke-width="0.8" opacity="0.3"/>
+                <rect x="310" y="110" width="80" height="24" rx="3" fill="var(--color-accent)" opacity="0.22" stroke="var(--color-accent)" stroke-width="0.8" opacity="0.3"/>
+                <!-- Row 4 -->
+                <rect x="40"  y="140" width="80" height="24" rx="3" fill="var(--color-accent)" opacity="0.2" stroke="var(--color-accent)" stroke-width="0.8" opacity="0.3"/>
+                <rect x="130" y="140" width="80" height="24" rx="3" fill="var(--color-accent)" opacity="0.15" stroke="var(--color-accent)" stroke-width="0.8" opacity="0.3"/>
+                <rect x="220" y="140" width="80" height="24" rx="3" fill="var(--color-accent)" opacity="0.2" stroke="var(--color-accent)" stroke-width="0.8" opacity="0.3"/>
+                <rect x="310" y="140" width="80" height="24" rx="3" fill="var(--color-accent)" opacity="0.15" stroke="var(--color-accent)" stroke-width="0.8" opacity="0.3"/>
+                <!-- Row 5 -->
+                <rect x="40"  y="170" width="80" height="10" rx="2" fill="var(--color-accent)" opacity="0.12" stroke="var(--color-accent)" stroke-width="0.8" opacity="0.2"/>
+                <rect x="130" y="170" width="80" height="10" rx="2" fill="var(--color-accent)" opacity="0.18" stroke="var(--color-accent)" stroke-width="0.8" opacity="0.2"/>
+                <rect x="220" y="170" width="80" height="10" rx="2" fill="var(--color-accent)" opacity="0.12" stroke="var(--color-accent)" stroke-width="0.8" opacity="0.2"/>
+                <rect x="310" y="170" width="80" height="10" rx="2" fill="var(--color-accent)" opacity="0.18" stroke="var(--color-accent)" stroke-width="0.8" opacity="0.2"/>
+              </g>
+
+              <!-- Callout: "20 units" -->
+              <text x="220" y="210" text-anchor="middle" fill="var(--color-accent-light)" font-size="16" font-family="var(--font-display)" font-weight="700">20 units per container</text>
+
+              <!-- Single crate detail below -->
+              <g transform="translate(120, 240)">
+                <!-- Crate 3D-ish -->
+                <rect x="0" y="10" width="90" height="55" rx="4" fill="var(--color-surface-alt)" stroke="var(--color-earth)" stroke-width="1.2"/>
+                <line x1="0" y1="30" x2="90" y2="30" stroke="var(--color-earth)" stroke-width="0.8" opacity="0.3"/>
+                <line x1="45" y1="10" x2="45" y2="65" stroke="var(--color-earth)" stroke-width="0.8" opacity="0.3"/>
+                <text x="45" y="80" text-anchor="middle" fill="var(--color-earth-light)" font-size="10" font-family="var(--font-body)" letter-spacing="0.06em">COMPACT CRATE</text>
+              </g>
+
+              <!-- Arrow -->
+              <line x1="260" y1="268" x2="290" y2="268" stroke="var(--color-muted)" stroke-width="1" opacity="0.4"/>
+              <polygon points="290,264 298,268 290,272" fill="var(--color-muted)" opacity="0.4"/>
+
+              <!-- Assembled pivot mini -->
+              <g transform="translate(305, 240)">
+                <line x1="20" y1="30" x2="90" y2="20" stroke="var(--color-text)" stroke-width="1.5" opacity="0.4"/>
+                <circle cx="20" cy="30" r="4" fill="var(--color-accent)" opacity="0.6"/>
+                <circle cx="20" cy="30" r="1.5" fill="var(--color-bg)"/>
+                <circle cx="90" cy="50" r="7" stroke="var(--color-muted)" stroke-width="1" fill="none" opacity="0.3"/>
+                <line x1="90" y1="20" x2="90" y2="43" stroke="var(--color-muted)" stroke-width="1" opacity="0.3"/>
+                <!-- spray -->
+                <circle cx="50" cy="27" r="1" fill="var(--color-water)" opacity="0.5"/>
+                <circle cx="70" cy="24" r="1" fill="var(--color-water)" opacity="0.4"/>
+                <text x="55" y="80" text-anchor="middle" fill="var(--color-accent-light)" font-size="10" font-family="var(--font-body)" letter-spacing="0.06em">ASSEMBLED</text>
+              </g>
+            </svg>
+          </div>
+
+          <!-- Copy -->
+          <div class="shipping-content">
+            <span class="section-tag">Ships Anywhere in Africa</span>
+            <h2>One Crate. <em>One Farm</em><br/>Transformed.</h2>
+            <p class="shipping-lead">Unlike traditional pivot systems that ship as oversized, heavy equipment requiring flatbed trucks and cranes — the Berin Mini-Pivot arrives in a <strong>single compact crate</strong>.</p>
+            <div class="shipping-features">
+              <div class="ship-feature">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--color-water)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2"/>
+                  <path d="M16 7V5a4 4 0 0 0-8 0v2"/>
+                </svg>
+                <span>Each unit packs flat into a single crate</span>
+              </div>
+              <div class="ship-feature">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--color-water)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="1" y="6" width="22" height="12" rx="2"/>
+                  <line x1="1" y1="12" x2="23" y2="12"/>
+                  <line x1="12" y1="6" x2="12" y2="18"/>
+                </svg>
+                <span>20 units fit in a standard shipping container</span>
+              </div>
+              <div class="ship-feature">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--color-water)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M2 12h20 M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+                <span>Ships to any port or inland depot across Africa</span>
+              </div>
+              <div class="ship-feature">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--color-water)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                  <path d="M2 17l10 5 10-5"/>
+                  <path d="M2 12l10 5 10-5"/>
+                </svg>
+                <span>Flat-pack pieces — no oversized freight costs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ COMPARISON TABLE ═══ -->
+    <section class="section compare-section">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">Berin vs Traditional</span>
+          <h2>See the <em>Difference</em></h2>
+          <p>A side-by-side look at why the Berin Mini-Pivot is purpose-built for African smallholder farms.</p>
+        </div>
+        <div class="compare-table-wrap">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th class="compare-feature">Feature</th>
+                <th class="compare-berin">Berin Mini-Pivot</th>
+                <th class="compare-traditional">Traditional Pivot</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Shipping</td>
+                <td class="highlight">Flat-pack crate — 20 units per container</td>
+                <td>Oversized freight, flatbed trucks, cranes</td>
+              </tr>
+              <tr>
+                <td>Delivery Reach</td>
+                <td class="highlight">Any port or depot in Africa</td>
+                <td>Limited to areas with heavy transport access</td>
+              </tr>
+              <tr>
+                <td>Assembly</td>
+                <td class="highlight">Tool-free, snap-fit — under 2 hours</td>
+                <td>Professional crew, heavy equipment, days–weeks</td>
+              </tr>
+              <tr>
+                <td>Power Source</td>
+                <td class="highlight">Manual — no electricity needed</td>
+                <td>Electric motor or diesel engine required</td>
+              </tr>
+              <tr>
+                <td>Farm Size</td>
+                <td class="highlight">1–5 hectares (smallholder optimized)</td>
+                <td>20–500+ hectares (commercial scale)</td>
+              </tr>
+              <tr>
+                <td>Cost</td>
+                <td class="highlight">Fraction of traditional systems</td>
+                <td>$20,000 – $100,000+</td>
+              </tr>
+              <tr>
+                <td>Portability</td>
+                <td class="highlight">Move between fields by hand</td>
+                <td>Permanent fixed installation</td>
+              </tr>
+              <tr>
+                <td>Operators</td>
+                <td class="highlight">1 person</td>
+                <td>Specialized technicians for install &amp; maintenance</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ IMPACT STATS ═══ -->
     <section class="stats-strip">
       <div class="stats-inner">
         <div class="stat">
-          <span class="stat-number">12+</span>
-          <span class="stat-label">Years of Experience</span>
+          <span class="stat-number">1–5 ha</span>
+          <span class="stat-label">Ideal Farm Size</span>
         </div>
         <div class="stat">
-          <span class="stat-number">5K+</span>
-          <span class="stat-label">Hectares Optimized</span>
+          <span class="stat-number">20</span>
+          <span class="stat-label">Units Per Container</span>
         </div>
         <div class="stat">
-          <span class="stat-number">98%</span>
-          <span class="stat-label">Client Retention</span>
+          <span class="stat-number">50%</span>
+          <span class="stat-label">Less Water vs Flood</span>
         </div>
         <div class="stat">
-          <span class="stat-number">30%</span>
-          <span class="stat-label">Avg. Yield Increase</span>
+          <span class="stat-number">2×</span>
+          <span class="stat-label">Growing Seasons / Year</span>
         </div>
       </div>
     </section>
 
-    <!-- SERVICES -->
-    <section class="section services-section">
+    <!-- ═══ WHO IT'S FOR ═══ -->
+    <section class="section audience-section">
       <div class="section-inner">
         <div class="section-header">
-          <span class="section-tag">What We Do</span>
-          <h2>Smart Farming,<br/><em>Real Results</em></h2>
-          <p>From soil to sale, our integrated approach combines cutting-edge agri-tech with time-tested farming wisdom.</p>
+          <span class="section-tag">Who It's For</span>
+          <h2>Designed with <em>Smallholder Farmers</em> in Mind</h2>
+          <p>Whether you're growing maize in Kenya, vegetables in Senegal, or cassava in Nigeria — the Berin Mini-Pivot fits your farm and your budget.</p>
         </div>
-        <div class="services-grid">
-          <div class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 48 48" width="48" height="48" fill="none">
-                <rect x="6" y="6" width="36" height="36" rx="8" stroke="var(--color-accent)" stroke-width="1.5" opacity="0.3"/>
-                <path d="M16 34 L16 24 L20 24 L20 34" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M22 34 L22 20 L26 20 L26 34" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M28 34 L28 14 L32 14 L32 34" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+        <div class="audience-features">
+          <div class="audience-item">
+            <div class="audience-number">01</div>
+            <div>
+              <h4>Smallholder Farms (1–5 ha)</h4>
+              <p>Purpose-built for the farm sizes most common across Sub-Saharan Africa.</p>
             </div>
-            <h3>Precision Agriculture</h3>
-            <p>Data-driven crop management using satellite imagery, IoT sensors, and AI analytics to maximize every input.</p>
           </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 48 48" width="48" height="48" fill="none">
-                <circle cx="24" cy="24" r="18" stroke="var(--color-accent)" stroke-width="1.5" opacity="0.3"/>
-                <path d="M24 12 C24 12, 18 20, 18 24 C18 28, 21 30, 24 30 C27 30, 30 28, 30 24 C30 20, 24 12, 24 12Z" fill="var(--color-accent)" opacity="0.2"/>
-                <path d="M24 18 L24 28 M20 24 L28 24" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
+          <div class="audience-item">
+            <div class="audience-number">02</div>
+            <div>
+              <h4>Off-Grid & Rural Areas</h4>
+              <p>No electricity, no problem. The system is fully manual and works with any water source — boreholes, rivers, or tanks.</p>
             </div>
-            <h3>Water Management</h3>
-            <p>Irrigation planning, water-table monitoring, and conservation strategies that protect resources and cut costs.</p>
           </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 48 48" width="48" height="48" fill="none">
-                <path d="M10 38 Q24 10, 38 38" stroke="var(--color-accent)" stroke-width="1.5" opacity="0.3" fill="none"/>
-                <circle cx="16" cy="30" r="3" fill="var(--color-accent)" opacity="0.35"/>
-                <circle cx="24" cy="18" r="3" fill="var(--color-accent)" opacity="0.55"/>
-                <circle cx="32" cy="26" r="3" fill="var(--color-accent)" opacity="0.45"/>
-                <path d="M16 30 L24 18 L32 26" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
+          <div class="audience-item">
+            <div class="audience-number">03</div>
+            <div>
+              <h4>Cooperatives & NGOs</h4>
+              <p>Easy to deploy at scale for agricultural development programs, cooperatives, and community farming projects.</p>
             </div>
-            <h3>Soil Health & Analytics</h3>
-            <p>Comprehensive soil profiling, nutrient mapping, and amendment plans that restore and build long-term fertility.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA BANNER -->
+    <!-- ═══ CTA ═══ -->
     <section class="cta-banner">
       <div class="cta-inner">
-        <h2>Ready to grow <em>smarter</em>?</h2>
-        <p>Let's talk about what Innovative Agri Solutions can do for your operation.</p>
-        <a href="contact.html" class="btn btn-primary btn-lg">Start a Conversation</a>
+        <h2>Bring irrigation to <em>your farm</em></h2>
+        <p>Get in touch to learn about pricing, distribution, and how the Berin Mini-Pivot can work for you.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-primary btn-lg">Request a Quote</a>
+          <a href="details.html" class="btn btn-outline">Learn More</a>
+        </div>
       </div>
     </section>
+
   </main>
 
   <!-- FOOTER -->
@@ -154,27 +469,22 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="index.html" class="logo">
-            <svg class="logo-icon" viewBox="0 0 40 40" width="30" height="30" fill="none">
-              <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.2" opacity="0.25"/>
-              <path d="M20 6 C20 6, 12 16, 12 22 C12 27, 16 30, 20 30 C24 30, 28 27, 28 22 C28 16, 20 6, 20 6Z" fill="var(--color-accent)" opacity="0.85"/>
-            </svg>
-            <span class="logo-text">Innovative Agri Solutions</span>
+            <img src="logo.png" alt="Innovative Agri Solutions" class="logo-img" style="height:38px" />
           </a>
-          <p class="footer-tagline">Technology-driven agriculture for a sustainable future.</p>
+          <p class="footer-tagline">Empowering smallholder farmers with affordable irrigation technology.</p>
         </div>
-
         <div class="footer-links">
           <div class="footer-col">
             <h4>Navigate</h4>
             <a href="index.html">Home</a>
-            <a href="details.html">Details</a>
+            <a href="details.html">Product Details</a>
             <a href="contact.html">Contact</a>
           </div>
           <div class="footer-col">
-            <h4>Solutions</h4>
-            <a href="details.html">Precision Farming</a>
-            <a href="details.html">Water Management</a>
-            <a href="details.html">Soil Analytics</a>
+            <h4>Product</h4>
+            <a href="details.html">How It Works</a>
+            <a href="details.html">Specifications</a>
+            <a href="contact.html">Pricing</a>
           </div>
           <div class="footer-col">
             <h4>Connect</h4>
@@ -184,7 +494,6 @@
           </div>
         </div>
       </div>
-
       <div class="footer-bottom">
         <span>&copy; 2026 Innovative Agri Solutions. All rights reserved.</span>
       </div>

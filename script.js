@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
       toggle.classList.toggle('open');
       nav.classList.toggle('open');
     });
-
     nav.querySelectorAll('.nav-link').forEach(link => {
       link.addEventListener('click', () => {
         toggle.classList.remove('open');
@@ -30,9 +29,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ── Scroll-triggered fade-in ── */
-  const observerOptions = { threshold: 0.15, rootMargin: '0px 0px -40px 0px' };
+  /* ── FAQ Accordion ── */
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
 
+      // Close all
+      document.querySelectorAll('.faq-item.open').forEach(openItem => {
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+
+      // Toggle clicked
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  /* ── Scroll-triggered animations ── */
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -40,39 +57,34 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.unobserve(entry.target);
       }
     });
-  }, observerOptions);
+  }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
 
-  document.querySelectorAll(
-    '.service-card, .approach-step, .detail-service, .stat, .info-card'
-  ).forEach(el => {
+  const animTargets = '.benefit-card, .approach-step, .stat, .info-card, .audience-item, .detail-service, .spec-item, .faq-item';
+
+  document.querySelectorAll(animTargets).forEach(el => {
     el.style.opacity = '0';
-    el.style.transform = 'translateY(24px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
     observer.observe(el);
   });
 
-  // Add staggered delays to groups
-  document.querySelectorAll('.services-grid, .approach-grid, .stats-inner, .contact-info').forEach(container => {
-    const children = container.querySelectorAll('.service-card, .approach-step, .stat, .info-card');
+  // Stagger children in groups
+  const containers = '.benefits-grid, .approach-grid, .stats-inner, .contact-info, .audience-features, .specs-grid, .faq-list';
+  document.querySelectorAll(containers).forEach(container => {
+    const children = container.querySelectorAll(animTargets);
     children.forEach((child, i) => {
-      child.style.transitionDelay = `${i * 0.08}s`;
+      child.style.transitionDelay = `${i * 0.06}s`;
     });
   });
 
-  /* ── Header background on scroll ── */
+  /* ── Header scroll effect ── */
   const header = document.querySelector('.site-header');
   if (header) {
     window.addEventListener('scroll', () => {
-      header.style.background = window.scrollY > 60
-        ? 'rgba(11, 15, 10, 0.95)'
-        : 'rgba(11, 15, 10, 0.8)';
+      header.style.background = window.scrollY > 50
+        ? 'rgba(250, 250, 247, 0.96)'
+        : 'rgba(250, 250, 247, 0.88)';
     }, { passive: true });
   }
-});
 
-// Intersection observer callback — add in-view class
-document.addEventListener('DOMContentLoaded', () => {
-  const style = document.createElement('style');
-  style.textContent = `.in-view { opacity: 1 !important; transform: translateY(0) !important; }`;
-  document.head.appendChild(style);
 });
